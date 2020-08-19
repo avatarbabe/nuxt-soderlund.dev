@@ -4,14 +4,15 @@
       <a href="https://github.com/avatarbabe" target="_blank">
         <svg
           baseProfile="tiny"
-          height="32px"
+          height="45px"
           fill="white"
           version="1.1"
           viewBox="0 0 24 24"
-          width="24px"
+          width="45px"
           xml:space="preserve"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
+          class="mt-1"
         >
           <g>
             <g>
@@ -29,8 +30,8 @@
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
           y="0px"
-          width="25"
-          height="25"
+          width="50"
+          height="50"
           viewBox="0 0 172 172"
           style="fill: #000000;"
           class="m-1"
@@ -65,8 +66,8 @@
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
           y="0px"
-          width="25"
-          height="25"
+          width="50"
+          height="50"
           viewBox="0 0 172 172"
           style="fill: #000000;"
           class="mt-1"

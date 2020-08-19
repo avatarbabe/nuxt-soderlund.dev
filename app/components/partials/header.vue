@@ -52,5 +52,6 @@ export default class Header extends Vue {
 
 .logo {
   min-height: 100px;
+  min-width: 100px;
 }
 </style>
