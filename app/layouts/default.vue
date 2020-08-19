@@ -1,16 +1,11 @@
 <template>
-  <main :class="[$route.name]" class="main px-4 md:px-0">
-    <div class="container mx-auto">
+  <main :class="[$route.name]" class="main overflow-x-hidden">
+    <div class="container mx-auto px-4 md:px-0">
       <site-header />
       <nuxt class="nuxt" />
     </div>
 
-    <svg
-      class="divider -mx-4 sm:mx-0"
-      width="100%"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1440 320"
-    >
+    <svg class="divider -mx-4 sm:mx-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path
         fill="#0B3765"
         fill-opacity="1"
