@@ -15,13 +15,13 @@
           </button>
         </div>
       </div>
-      <!--<div class="flex flex-col w-full xl:w-2/5">
+      <div class="flex flex-col w-full xl:w-2/5">
         <img
           alt="Hero"
           class="rounded shadow-xl"
           src="https://source.unsplash.com/random/720x400"
         />
-      </div>-->
+      </div>
     </div>
   </section>
 </template>
@@ -52,3 +52,4 @@ export default class Home extends Vue {
   }
 }
 </script>
+<style lang="scss" scoped></style>
