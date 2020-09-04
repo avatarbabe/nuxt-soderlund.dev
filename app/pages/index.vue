@@ -1,7 +1,7 @@
 <template>
   <section class="home">
-    <div class="py-24 md:py-36 mx-auto flex flex-wrap flex-col-reverse xl:flex-row items-center">
-      <div class="flex flex-col w-full xl:w-3/5 justify-center lg:items-start overflow-y-hidden">
+    <div class="py-2 md:py-36 mx-auto flex flex-wrap flex-col-reverse md:flex-row items-center">
+      <div class="flex flex-col w-full md:w-1/2 justify-center lg:items-start overflow-y-hidden">
         <div v-html="$md.render(welcomeText)" class="home__welcome markdown" />
 
         <div class="mb-12 xl:mb-0">
@@ -15,10 +15,50 @@
           </button>
         </div>
       </div>
-      <div class="flex flex-col w-full xl:w-2/5">
-        <img alt="Hero" class="rounded shadow-xl" src="/images/uploads/abstract-success-1.png" />
+      <div class="flex flex-col w-full md:w-1/2">
+        <img alt="Hero" class="" src="/images/uploads/marcus.png" />
       </div>
     </div>
+    <div class="flex flex-col relative">
+      <div class="contact__container w-full text-center">
+        <h3 class="text-5xl font-bold">Contact me</h3>
+        <p class="text-xl lg:mb-24 mb-12">
+          Feel free to contact me if you have any questions, inquiries or just want to chat :)
+        </p>
+        <div
+          class="container mx-auto pb-6 flex justify-center grid grid-cols-2 xl:grid-cols-4 w-1/2 md:w-1/6 xl:w-1/4"
+        >
+          <a href="mailto:marcus_soderlund@yahoo.se" target="email">
+            <img alt="mail" src="images/uploads/mail-black.svg" />
+          </a>
+          <a href="https://github.com/avatarbabe" target="_blank">
+            <img alt="github" src="images/uploads/github-black.svg" />
+          </a>
+          <a href="https://www.instagram.com/soderlund_marcus" target="_blank">
+            <img alt="instagram" src="images/uploads/instagram-black.svg" />
+          </a>
+          <a href="https://www.linkedin.com/in/soderlundmarcus" target="_blank">
+            <img alt="linkedin" src="images/uploads/linkedin-black.svg" />
+          </a>
+        </div>
+      </div>
+      <div class="flex items-end">
+        <div class="-mr-12 hidden xl:block">
+          <img alt="ground" class="" src="/images/uploads/ground.svg" />
+          <div class="h-24"></div>
+        </div>
+        <img
+          alt="contact-me"
+          class="hidden md:block ml-auto"
+          src="/images/uploads/contact-me.svg"
+        />
+      </div>
+    </div>
+    <img
+      alt="contact-me"
+      class="md:hidden -mt-24 ml-auto"
+      src="/images/uploads/contact-me-small.svg"
+    />
   </section>
 </template>
 
@@ -48,4 +88,19 @@ export default class Home extends Vue {
   }
 }
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.contact__container {
+  top: -5rem;
+
+  @screen md {
+    position: absolute;
+    top: 2rem;
+  }
+  @screen lg {
+    top: 6rem;
+  }
+  .container {
+    justify-items: center;
+  }
+}
+</style>

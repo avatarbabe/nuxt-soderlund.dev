@@ -9,7 +9,7 @@
 }
 
 .markdown {
-  @apply text-gray-900 leading-normal break-words;
+  @apply text-gray-900 leading-normal text-2xl break-words;
 }
 
 .markdown > * + * {
@@ -37,7 +37,7 @@
 }
 
 .markdown h1 {
-  @apply leading-tight text-5xl font-semibold mb-4 mt-6 pb-2;
+  @apply leading-tight text-6xl font-semibold mb-4 mt-6 pb-2;
 }
 
 .markdown h2 {

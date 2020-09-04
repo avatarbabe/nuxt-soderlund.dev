@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  color: #3A3A3A;
 }
 
 .page-enter-active,
@@ -30,4 +31,8 @@ body {
 .slide-right-enter {
   opacity: 0;
   transform: translate(-30px, 0);
+}
+
+h1{
+  font-size: 4.5rem;
 }
