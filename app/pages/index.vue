@@ -1,6 +1,8 @@
 <template>
   <section class="home">
-    <div class="py-2 md:py-36 mx-auto flex flex-wrap flex-col-reverse md:flex-row items-center">
+    <div
+      class="container py-2 md:py-36 mx-auto flex flex-wrap flex-col-reverse md:flex-row items-center"
+    >
       <div class="flex flex-col w-full md:w-1/2 justify-center lg:items-start overflow-y-hidden">
         <div v-html="$md.render(welcomeText)" class="home__welcome markdown" />
 
@@ -8,10 +10,25 @@
           <h4 v-if="isSignedUp">Thank you - we'll be in touch shortly.</h4>
 
           <button
-            class="flex-shrink-0 bg-blue-500 hover:bg-blue-700 border-blue-500 hover:border-blue-700 text-sm border-4 text-white py-1 px-2 rounded"
+            class="flex flex-shrink-0 bg-blue-500 hover:bg-blue-700 border-blue-500 hover:border-blue-700 text-sm font-medium border-4 text-white py-1 px-2 rounded"
             type="submit"
           >
-            Kontakta mig
+            Contact me
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-arrow-right ml-2"
+            >
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
           </button>
         </div>
       </div>
@@ -19,7 +36,8 @@
         <img alt="Hero" class="" src="/images/uploads/marcus.png" />
       </div>
     </div>
-    <div class="flex flex-col relative">
+    <img alt="wave" class="" src="/images/uploads/wave-1.svg" />
+    <div class="container flex flex-col relative">
       <div class="contact__container w-full text-center">
         <h3 class="text-5xl font-bold">Contact me</h3>
         <p class="text-xl lg:mb-24 mb-12">
